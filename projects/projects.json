@@ -1,0 +1,106 @@
+{
+  "projects": [
+    {
+      "title": "Enterprise IAM Automation Platform",
+      "slug": "iam-automation",
+      "description": "PowerShell and Python-driven user provisioning system for 500-user organization across 450+ applications with compliance reporting for financial services regulations.",
+      "techStack": ["PowerShell", "Python", "Okta", "Azure AD", "Auth0", "SQL Server", "Jira API"],
+      "features": [
+        "30% reduction in manual provisioning processes",
+        "Automated compliance reporting pipeline for financial services",
+        "Integration with Jira ticketing and Monday.com project management",
+        "Complex stored procedures for access logging and reporting"
+      ],
+      "type": "Enterprise Production",
+      "links": {
+        "github": null,
+        "live": "projects/iam-automation.html"
+      }
+    },
+    {
+      "title": "SMELS - Small Model Error Log Summarizer",
+      "slug": "smels-rs",
+      "description": "Intelligent CLI tool that analyzes and provides actionable fixes for errors across multiple programming languages using local AI models for privacy-focused development workflow enhancement.",
+      "techStack": ["Rust", "Ollama", "AI/ML", "CLI", "Multi-language Parsing"],
+      "features": [
+        "Multi-language error detection (Rust, JS, Python, Java)",
+        "Local AI processing with privacy-first design",
+        "Web interface with caching for improved performance",
+        "Published as open-source crate on crates.io"
+      ],
+      "type": "Developer Tools",
+      "links": {
+        "github": "https://github.com/etuckerdev/smels-rs",
+        "live": "projects/smels-rs.html"
+      }
+    },
+    {
+      "title": "Enterprise Billing System Features",
+      "slug": "billing-platform", 
+      "description": "ASP.NET enterprise billing platform with KnockoutJS frontend, optimized for high-volume financial transaction processing with enhanced user experience.",
+      "techStack": ["C#", "ASP.NET", "KnockoutJS", "SQL Server", "JavaScript"],
+      "features": [
+        "Invoice design system improvements and UI enhancements",
+        "Database query optimizations for high-volume billing operations",
+        "Enhanced user experience across billing workflows",
+        "Agile development with consistent code quality delivery"
+      ],
+      "type": "Enterprise Production",
+      "links": {
+        "github": null,
+        "live": "projects/billing-platform.html"
+      }
+    },
+    {
+      "title": "RustAIx - Systems Programming Exploration",
+      "slug": "rustrix",
+      "description": "Advanced systems programming project exploring Rust's capabilities in AI-adjacent domains, demonstrating modern memory-safe systems development practices and performance optimization.",
+      "techStack": ["Rust", "Systems Programming", "Performance Optimization", "Memory Safety"],
+      "features": [
+        "Exploration of Rust's memory safety in complex systems",
+        "Performance-critical implementation patterns",
+        "Modern systems architecture design",
+        "AI-adjacent systems programming concepts"
+      ],
+      "type": "Research & Development",
+      "links": {
+        "github": "https://github.com/etuckerdev/RustAIx", 
+        "live": "projects/rustrix.html"
+      }
+    },
+    {
+      "title": "QA Automation Framework",
+      "slug": "qa-automation",
+      "description": "Comprehensive test automation suite using Selenium WebDriver and BDD methodology with Gherkin scenarios for enterprise billing system validation.",
+      "techStack": ["Selenium", "C#", "Gherkin", "BDD", "Test Automation"],
+      "features": [
+        "40% reduction in issue resolution time",
+        "Automated regression testing pipeline for billing systems",
+        "BDD scenario coverage for critical payment processing flows",
+        "Custom testing templates and linting scripts for development teams"
+      ],
+      "type": "Enterprise Production",
+      "links": {
+        "github": null,
+        "live": "projects/qa-automation.html"
+      }
+    },
+    {
+      "title": "Crux AI Framework",
+      "slug": "crux-ai",
+      "description": "Personal project: Intelligent AI system combining large language models with custom Rust architectures for flexible reasoning and problem-solving across different domains.",
+      "techStack": ["Rust", "Python", "LLM APIs", "Vector Databases"],
+      "features": [
+        "Conceptual mapping and multi-step reasoning capabilities",
+        "Vector search and retrieval for information discovery",
+        "Modular AI components for various problem types",
+        "Integration with workflow orchestration systems"
+      ],
+      "type": "Personal Exploration",
+      "links": {
+        "github": "https://github.com/etuckerdev/crux-core",
+        "live": "projects/crux-ai.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "title": "Scaling IAM Automation: Lessons from Managing 450+ Applications",
+      "slug": "scaling-iam-automation",
+      "description": "Practical insights from automating user provisioning across a 500-user organization, including PowerShell strategies, compliance considerations, and measurable ROI.",
+      "publishDate": "2024-09-15",
+      "readTime": "8 min read",
+      "category": "Enterprise Systems",
+      "tags": ["IAM", "PowerShell", "Automation", "Enterprise", "Compliance"],
+      "excerpt": "When you're managing IAM for 500+ users across 450+ applications, manual processes become a bottleneck fast. Here's how we achieved 30% efficiency gains through strategic automation.",
+      "featured": true
+    },
+    {
+      "title": "Building Privacy-First Developer Tools with Rust and Local AI",
+      "slug": "privacy-first-developer-tools",
+      "description": "How SMELS demonstrates the future of developer tooling: local AI processing, multi-language support, and enterprise-grade privacy considerations.",
+      "publishDate": "2024-09-10",
+      "readTime": "6 min read",
+      "category": "Developer Tools",
+      "tags": ["Rust", "AI", "Privacy", "CLI", "Developer Experience"],
+      "excerpt": "Why the future of AI-powered developer tools lies in local processing, and how Rust enables building fast, safe, and private solutions that developers actually want to use.",
+      "featured": true
+    },
+    {
+      "title": "From Manual QA to 40% Faster Resolution: A BDD Automation Journey",
+      "slug": "qa-automation-bdd-journey",
+      "description": "Transforming billing system quality assurance through Selenium, Gherkin, and behavior-driven development in enterprise environments.",
+      "publishDate": "2024-09-05",
+      "readTime": "7 min read",
+      "category": "Quality Assurance",
+      "tags": ["QA", "Selenium", "BDD", "Gherkin", "Automation", "Testing"],
+      "excerpt": "Building a QA automation framework that reduced issue resolution time by 40% while maintaining developer buy-in and ensuring comprehensive test coverage.",
+      "featured": false
+    },
+    {
+      "title": "Enterprise Security Meets Modern Development: Lessons from Financial Services",
+      "slug": "enterprise-security-modern-dev",
+      "description": "Balancing security compliance requirements with developer productivity in regulated environments.",
+      "publishDate": "2024-08-28",
+      "readTime": "5 min read",
+      "category": "Security",
+      "tags": ["Security", "Compliance", "Enterprise", "DevSecOps"],
+      "excerpt": "How to maintain stringent security posture in financial services while enabling modern development practices and maintaining developer velocity.",
+      "featured": false
+    },
+    {
+      "title": "Why Rust for Systems Programming: An Enterprise Developer's Perspective",
+      "slug": "rust-enterprise-perspective",
+      "description": "Exploring Rust's memory safety and performance benefits through the lens of enterprise systems reliability requirements.",
+      "publishDate": "2024-08-20",
+      "readTime": "9 min read",
+      "category": "Systems Programming",
+      "tags": ["Rust", "Systems Programming", "Memory Safety", "Performance", "Enterprise"],
+      "excerpt": "Coming from C# and enterprise systems, here's why Rust's approach to memory safety and performance optimization matters for enterprise infrastructure.",
+      "featured": false
+    }
+  ]
+}

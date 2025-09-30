@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMELS - Small Model Error Log Summarizer // Evan Tucker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a class="site-logo" href="../index.html">&#8592; Back to portfolio</a>
+    </div>
+  </header>
+  <main class="site-main">
+    <article class="section container">
+      <header class="section__header">
+        <h1>SMELS - Small Model Error Log Summarizer</h1>
+        <p>Intelligent CLI tool that analyzes and provides actionable fixes for errors across multiple programming languages using local AI models for privacy-focused development workflow enhancement.</p>
+      </header>
+      <div class="project-detail">
+        <img src="../images/smels-rs.png" alt="SMELS CLI tool interface" class="project-detail__cover" />
+        <section>
+          <h2>Developer Problem Solved</h2>
+          <p>As a developer working across multiple languages and frameworks, I frequently encountered the tedious process of parsing error messages, searching documentation, and finding solutions. This time-consuming workflow interrupted development flow and reduced productivity, especially when working with unfamiliar error formats across different programming environments.</p>
+        </section>
+        <section>
+          <h2>Solution & Architecture</h2>
+          <ul>
+            <li>Built a Rust-based CLI tool that intelligently parses error logs from multiple programming languages (Rust, JavaScript, Python, Java).</li>
+            <li>Integrated with Ollama for local AI processing, ensuring privacy by keeping error logs and analysis completely offline.</li>
+            <li>Implemented multi-format error detection with language-specific parsing strategies for accurate analysis.</li>
+            <li>Created a companion web interface with caching mechanisms for improved performance and user experience.</li>
+            <li>Published as an open-source crate on crates.io, making it easily installable for the Rust community.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Technical Implementation</h2>
+          <ul>
+            <li><strong>Language Detection:</strong> Smart parsing algorithms that identify error context across different programming languages and frameworks.</li>
+            <li><strong>Privacy-First Design:</strong> All processing happens locally using Ollama, ensuring sensitive code and error information never leaves the developer's machine.</li>
+            <li><strong>Performance Optimization:</strong> Efficient Rust implementation with caching strategies to minimize AI model calls and improve response times.</li>
+            <li><strong>Extensible Architecture:</strong> Modular design allowing easy addition of new programming languages and error formats.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Impact & Learning</h2>
+          <ul>
+            <li>Demonstrates practical application of Rust in developer tooling, showcasing the language's strengths in CLI development.</li>
+            <li>Bridges my enterprise security mindset (privacy-first design) with modern AI integration patterns.</li>
+            <li>Open-source contribution that addresses a real developer pain point experienced across the programming community.</li>
+            <li>Represents my commitment to continuous learning and exploration of emerging technologies while solving practical problems.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Tech stack</h2>
+          <ul class="project-card__meta">
+            <li>Rust</li>
+            <li>Ollama</li>
+            <li>AI/ML Integration</li>
+            <li>CLI Development</li>
+            <li>Multi-language Parsing</li>
+            <li>Web Interface</li>
+            <li>Caching Systems</li>
+            <li>Open Source</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Enterprise Relevance</h2>
+          <p>This project demonstrates how I apply enterprise-learned principles to modern development challenges. The privacy-first approach reflects the security consciousness essential in enterprise environments, while the multi-language support and intelligent error analysis showcase the kind of developer productivity tools that can significantly impact enterprise development workflows.</p>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <p><a href="https://github.com/etuckerdev/smels-rs" target="_blank" rel="noopener">View source on GitHub</a></p>
+          <p><a href="https://crates.io/crates/smels" target="_blank" rel="noopener">Install from crates.io</a></p>
+        </section>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
