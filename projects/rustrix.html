@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RustAIx - Systems Programming Exploration // Evan Tucker</title>
+  <title>RustAIx - Local AI Framework // Evan Tucker</title>
+  <meta name="description" content="RustAIx - A production-ready Rust framework for local AI development featuring chat completions, embeddings, RAG, and agent workflows with zero external dependencies." />
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet" />
@@ -19,65 +20,89 @@
   <main class="site-main">
     <article class="section container">
       <header class="section__header">
-        <h1>RustAIx - Systems Programming Exploration</h1>
-        <p>Advanced systems programming project exploring Rust's capabilities in AI-adjacent domains, demonstrating modern memory-safe systems development practices and performance optimization techniques.</p>
+        <h1>RustAIx - Local AI Framework</h1>
+        <p>A comprehensive, production-ready Rust framework that makes local AI development accessible to developers. Built with memory safety, performance, and developer experience as core principles, RustAIx provides unified APIs for chat completions, embeddings, RAG, and agent workflows.</p>
       </header>
       <div class="project-detail">
-        <img src="../images/rustaix.png" alt="RustAIx systems architecture diagram" class="project-detail__cover" />
+        <img src="../images/rustaix.png" alt="RustAIx modular architecture diagram showing layered design" class="project-detail__cover" loading="lazy" />
+        
         <section>
-          <h2>Learning Motivation</h2>
-          <p>Coming from a background in C# and enterprise systems, I wanted to explore how Rust's memory safety guarantees and performance characteristics could apply to systems programming challenges, particularly in AI-adjacent domains where performance and reliability are critical.</p>
+          <h2>The Challenge</h2>
+          <p>Local AI development has been fragmented and complex, requiring developers to navigate multiple APIs, manage memory-unsafe code, and handle intricate model loading processes. Most existing solutions prioritize raw performance over developer experience, creating barriers for teams wanting to integrate AI capabilities into their applications.</p>
         </section>
+
         <section>
-          <h2>Technical Exploration Areas</h2>
+          <h2>Solution Architecture</h2>
+          <p>RustAIx addresses these challenges through a modular, layered architecture that prioritizes both safety and performance. The framework consists of three main crates working in harmony:</p>
           <ul>
-            <li>Memory-safe systems programming patterns that eliminate entire classes of bugs common in traditional systems languages.</li>
-            <li>Performance optimization techniques leveraging Rust's zero-cost abstractions for high-throughput data processing.</li>
-            <li>Concurrent programming models using Rust's ownership system to prevent data races and ensure thread safety.</li>
-            <li>Integration patterns for AI/ML workflows that maintain system reliability while supporting experimental development.</li>
+            <li><strong>rustaix-core:</strong> Foundation layer providing type-safe APIs, configuration management, and error handling patterns</li>
+            <li><strong>rustaix-runtime:</strong> Execution engine with async-first task scheduling, backend coordination, and comprehensive telemetry</li>
+            <li><strong>rustaix-server:</strong> Model management layer handling lifecycle, caching, and serving with multiple backend support</li>
           </ul>
         </section>
+
         <section>
-          <h2>Systems Architecture Focus</h2>
+          <h2>Core Capabilities</h2>
           <ul>
-            <li><strong>Memory Management:</strong> Exploring Rust's ownership model as an alternative to manual memory management and garbage collection.</li>
-            <li><strong>Performance Critical Paths:</strong> Implementing algorithms where zero-cost abstractions provide measurable performance benefits.</li>
-            <li><strong>Error Handling:</strong> Leveraging Rust's Result type system for robust error propagation in systems contexts.</li>
-            <li><strong>Interoperability:</strong> Building bridges between Rust systems components and other language ecosystems.</li>
+            <li><strong>Unified API:</strong> Single interface for chat completions, embeddings, RAG, and agent workflows with OpenAI-compatible endpoints</li>
+            <li><strong>Local-First Design:</strong> Complete offline operation with no external dependencies, ensuring data privacy and reduced latency</li>
+            <li><strong>Multi-Backend Support:</strong> Seamless integration with Candle (pure Rust), llama.cpp FFI, and extensible custom backends</li>
+            <li><strong>Production Features:</strong> Built-in caching, streaming responses, task scheduling, and comprehensive monitoring with Prometheus metrics</li>
+            <li><strong>Plugin System:</strong> Extensible architecture supporting custom tokenizers, model formats, and processing pipelines</li>
           </ul>
         </section>
+
         <section>
-          <h2>Key Learning Outcomes</h2>
+          <h2>Technical Implementation</h2>
           <ul>
-            <li>Deep understanding of ownership, borrowing, and lifetime concepts as applied to real-world systems challenges.</li>
-            <li>Practical experience with Rust's type system for encoding invariants and preventing runtime errors.</li>
-            <li>Performance optimization strategies unique to Rust's compilation model and memory layout guarantees.</li>
-            <li>Appreciation for how modern systems languages can improve reliability without sacrificing performance.</li>
+            <li><strong>Memory Safety:</strong> Leverages Rust's ownership system to eliminate entire classes of memory-related bugs common in AI inference systems</li>
+            <li><strong>Async Performance:</strong> Built on Tokio runtime with non-blocking I/O throughout the stack, supporting high-concurrency workloads</li>
+            <li><strong>Type System:</strong> Comprehensive type definitions prevent runtime errors and provide compile-time guarantees for configuration validation</li>
+            <li><strong>Resource Management:</strong> Intelligent model loading/unloading with LRU caching and configurable memory limits</li>
+            <li><strong>Observability:</strong> Structured logging with tracing, distributed telemetry, and health monitoring endpoints</li>
           </ul>
         </section>
+
         <section>
-          <h2>Tech stack</h2>
+          <h2>Performance & Results</h2>
+          <ul>
+            <li><strong>Zero-Copy Operations:</strong> Efficient data handling with minimal memory allocations during inference</li>
+            <li><strong>Streaming Support:</strong> Real-time response generation with Server-Sent Events for improved user experience</li>
+            <li><strong>Concurrent Processing:</strong> Parallel inference across multiple models with intelligent task scheduling</li>
+            <li><strong>Resource Efficiency:</strong> Optimized for local hardware with automatic cleanup and resource reclamation</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Production Deployment</h2>
+          <p>RustAIx is designed for enterprise reliability with comprehensive deployment options including containerization, Kubernetes orchestration, and cloud deployment. The framework includes built-in health checks, metrics collection, and graceful degradation patterns essential for production AI systems.</p>
+        </section>
+
+        <section>
+          <h2>Tech Stack</h2>
           <ul class="project-card__meta">
             <li>Rust</li>
-            <li>Systems Programming</li>
-            <li>Performance Optimization</li>
-            <li>Memory Safety</li>
-            <li>Concurrent Programming</li>
-            <li>Zero-cost Abstractions</li>
-            <li>AI/ML Integration</li>
+            <li>Tokio Async Runtime</li>
+            <li>llama.cpp FFI</li>
+            <li>Candle ML Framework</li>
+            <li>HTTP/WebSocket/gRPC APIs</li>
+            <li>Prometheus Metrics</li>
+            <li>GGUF/GGML Model Support</li>
+            <li>OpenAI-Compatible APIs</li>
           </ul>
         </section>
+
         <section>
-          <h2>Enterprise Perspective</h2>
-          <p>This exploration represents my commitment to understanding how emerging technologies can improve enterprise system reliability and performance. The memory safety guarantees and performance characteristics I'm learning in Rust directly apply to the kinds of high-reliability, high-performance systems required in enterprise environments.</p>
+          <h2>Enterprise Impact</h2>
+          <p>This framework demonstrates the potential for Rust to transform AI infrastructure by providing memory-safe, high-performance solutions that reduce operational complexity. The local-first approach addresses data privacy concerns while the modular architecture enables rapid integration into existing enterprise systems.</p>
         </section>
+
         <section>
-          <h2>Future Applications</h2>
-          <p>The systems programming skills and performance optimization techniques learned through this project have direct applications to enterprise infrastructure, automation tooling, and high-performance data processing systems where reliability and efficiency are paramount.</p>
-        </section>
-        <section>
-          <h2>Resources</h2>
-          <p><a href="https://github.com/etuckerdev/RustAIx" target="_blank" rel="noopener">View source on GitHub</a></p>
+          <h2>Links</h2>
+          <p>
+            <a href="https://github.com/etuckerdev/RustAIx" target="_blank" rel="noopener">View source on GitHub</a> • 
+            <a href="https://github.com/etuckerdev/RustAIx/blob/main/docs/" target="_blank" rel="noopener">Documentation</a>
+          </p>
         </section>
       </div>
     </article>
